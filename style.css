@@ -1,12 +1,8 @@
 * {
-
     border: 2px;
-    
     border-style: solid;
-    
     border-color: red;
-    
-    }
+}
 
 *,
 *::before,
@@ -27,6 +23,7 @@ body {
     position: relative;
 }
 
+/* Top Nav */
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -55,6 +52,7 @@ body {
     gap: 25px;
 }
 
+/* Lower Bar */
 .navheader {
     display: flex;
     flex-direction: row;
@@ -88,18 +86,38 @@ img {
     height: auto;
 }
 
+/* Mid Section */
 .midcontent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0;
-    padding-top: 15px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contentboxes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .contentboxes {
-    display: flex;
-    justify-content: center;
     text-align: center;
-    gap: 52px; 
-    flex: 0;
+    flex: 1;
+    min-width: 400px;
 }
+
+.contentboxes img {
+    width: 70%;
+    height: auto;
+    max-width: 200px;
+}
+
+
